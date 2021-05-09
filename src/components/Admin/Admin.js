@@ -11,13 +11,14 @@ import Paper from '@material-ui/core/Paper';
 import { MdModeEdit, MdDelete } from 'react-icons/md';
 import _ from 'lodash';
 import axios from 'axios';
+import { venueData } from '../Utils/Data';
 
 class Admin extends Component {
     constructor(props) {
         super(props);
         // this.props.getHotelsRequest();
         this.state = {
-            hotels: [],
+            hotels: venueData[0].hotels,
             loading: true,
             update: state => {
                 this.setState(state);
@@ -29,12 +30,12 @@ class Admin extends Component {
 
     componentWillMount() {
         /* all available hotel's list */
-        axios.get(`http://localhost:3001/hotels`).then(res => {
-            this.setState({
-                hotels: res.data,
-                loading: false
-            });
-        });
+        // axios.get(`http://localhost:3001/hotels`).then(res => {
+        //     this.setState({
+        //         hotels: res.data,
+        //         loading: false
+        //     });
+        // });
     }
 
     render() {
