@@ -1,0 +1,77 @@
+# Architecture
+
+Book a stay for Conference
+- Upcoming Confrences
+-- load using [API1] infitine scroll with search
+-- upon selection copy the start date end date to checkin checkiut date and keep editable
+- Check in - Check Out date
+- Guests 
+
+
+------------
+
+Conference {
+	id: uuid;
+	name: string;
+	venue: string;
+	startDate: string;
+	endDate: string;
+}
+
+
+API1
+GET /conferences?name=q&_page=7&_limit=20&_sort=startDate&_order=asc
+
+---
+Hotel {
+	id: uuid,
+	name: string,
+	description: string,
+	distance_to_venue: number,
+	rating: number, between 1 and 5,
+	price_category: string, one of: ['low', 'medium', 'high'],
+	amenities: Array with any combination of the following elements: [
+	'free_parking',
+	'free_wifi',
+	'gym',
+	'pets',
+	'pool',
+	'restaurant',
+	'spa'
+	],
+	images: Array,
+	rooms: RoomSchema[],
+}
+
+
+API2
+GET /hotels?name=q&_page=7&_limit=20&_sort=startDate&_order=asc
+
+
+
+---
+
+// DB.JSON
+{
+  "conferences": [
+    { "id": 1, "title": "json-server", "author": "typicode" },
+    { "id": 1, "title": "json-server", "author": "typicode" },
+    { "id": 1, "title": "json-server", "author": "typicode" },
+    { "id": 1, "title": "json-server", "author": "typicode" },
+    { "id": 1, "title": "json-server", "author": "typicode" },
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "hotels": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ]
+}
+
+json-server --watch db.json
+
+https://github.com/seasalt313/trv-venue-hotel-api/blob/master/db.json
+

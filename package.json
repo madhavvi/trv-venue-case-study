@@ -1,0 +1,56 @@
+{
+  "name": "trv-venue-hotel-client-clone",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "*",
+    "@syncfusion/ej2-react-calendars": "^19.1.56",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.18.0",
+    "date-fns": "^2.21.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-date-range": "^1.1.3",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^4.2.0",
+    "react-image-gallery": "^1.0.9",
+    "react-material-ui-carousel": "^2.2.4",
+    "react-rating-stars-component": "^2.2.0",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "4.0.3",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "uuid": "^3.2.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

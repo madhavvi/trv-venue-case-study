@@ -1,0 +1,51 @@
+.gridLayout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    justify-content: start;
+    grid-gap: 0.75rem;
+}
+
+.roomRating {
+    font-size: 14px;
+    line-height: 2.5;
+    margin: 5px 0 !important;
+}
+
+.divider {
+    border-bottom: 1px solid #ebeced;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.refunds {
+    font-size: 13px !important;
+    margin: 8px !important;
+}
+.reserveBtn {
+    justify-content: flex-end;
+    padding: 10px !important;
+}
+
+.reserveBtn Button {
+    background-color: #428500;
+    color: white;
+    text-transform: capitalize;
+    padding: 6px 12px;
+}
+
+.reserveBtn Button:hover {
+    background-color: #428500bd;
+}
+
+.reserveBtn Button:disabled {
+    color: rgb(0 0 0 / 66%);
+    background-color: #bdbdbd;
+}
+
+.MuiBackdrop-root {
+    background-color: transparent !important;
+}
+
+div[aria-hidden="true"] {
+    background-color: #0000000a !important;
+}

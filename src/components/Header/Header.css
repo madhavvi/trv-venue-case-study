@@ -1,0 +1,55 @@
+.header {
+    /* height: 80px; */
+    /* background-color: #66af4e; */
+    border-bottom: 1px solid #cbcdce;
+}
+
+.logo {
+    height: 70px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.language {
+    float: right;
+    padding: 34px;
+    cursor: pointer;
+}
+
+.language:hover, .language:focus, .user:focus, .user:hover {
+    background-color: #ebeced;
+    outline: 0;
+}
+
+.user {
+    float: right;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 14px;
+}
+
+.avatar {
+    font-size: 50px;
+    color: rgb(55, 69, 77);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    line-height: 1;
+    user-select: none;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.user span {
+    align-self: center;
+    flex: 1 1 0%;
+    line-height: 12px;
+    padding: 8px 0 10px 0;
+    color: rgb(55, 69, 77);
+}

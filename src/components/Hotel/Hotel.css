@@ -1,0 +1,166 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.hotelGridWrapper {
+    height: auto;
+    width: 90vw;
+    margin: 0 auto;
+    /* display: flex; */
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgb(41 51 57 / 50%);
+}
+
+.hotelImageGrid {
+    padding: 0;
+}
+
+.hotelImageGrid, .hotelDetailGrid, .hotelPriceGrid {
+    display: inline-block !important;
+    padding: 10px;
+}
+
+.hotelDetailGrid {
+    cursor: pointer;
+    /* background-color: #f4f0e8c7; */
+}
+
+.divider {
+    border-bottom: 1px solid #ebeced;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.hotelName p {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    color: #37454D;
+    font-weight: 700;
+    margin: 0;
+}
+
+.distanceToVenue {
+    font-size: 22px;
+    margin: 5px 8px 5px 0;
+}
+
+.hotelLocation p {
+    margin: 9px 0;
+    font-size: 14px;
+}
+
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg {
+    height: 30px;
+    width: 40px;
+}
+
+.image-gallery-slide .image-gallery-image {
+    object-fit: cover;
+    height: 180px;
+}
+
+.image-gallery-left-nav, .image-gallery-right-nav {
+    padding: 50px 0px;
+}
+
+.image-gallery-fullscreen-button, .image-gallery-play-button {
+    padding: 10px !important;
+}
+
+.image-gallery-fullscreen-button .image-gallery-svg, .image-gallery-play-button .image-gallery-svg {
+    height: 20px;
+    width: 20px;
+}
+
+.rating, .rating-text {
+    margin: 10px 14px 0 0;
+    font-size: 14px;
+}
+
+.rating-text {
+    font-weight: 700;
+}
+
+.ratingLow {
+    background-color: #cb1b1b;
+    padding: 3px 18px;
+    border-radius: 18px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+.ratingHigh {
+    background-color: #316300;
+    padding: 3px 18px;
+    border-radius: 18px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.selectRoomBtn {
+    background-color: #428500 !important;
+    color: white !important;
+    float: right;
+}
+
+.selectRoomBtn span {
+    font-weight: 700;
+}
+
+.hotelPricing {
+    padding: 15px 10px;
+    background-color: #4285002e;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    text-align: end;
+}
+
+.hotelPricing .price {
+    font-size: 30px;
+    margin: 9px 0;
+    color: #428500;
+    font-weight: 600;
+}
+
+.freeCancalation svg polygon:first-of-type {
+    fill: #428500;
+}
+
+.freeCancalation span {
+    color: #428500;
+    font-size: 12px;
+    vertical-align: text-top;
+    margin-left: 6px;
+}
+
+.priceTerms {
+    margin: 4px 0;
+    font-size: 11px;
+}
+
+.hotelPricingBtn {
+    justify-content: flex-end;
+}
+
+.tabPanelWrapper {
+    height: 48px;
+    background-color: white !important;
+    border: 1px solid #ebeced;
+    box-shadow: none !important;
+}
+
+.tabList {
+    flex-grow: 1;
+    min-width: 'unset';
+    max-width: 'unset';
+    text-transform: none !important;
+}
+
+div[role="tablist"] {
+    justify-content: center;
+}

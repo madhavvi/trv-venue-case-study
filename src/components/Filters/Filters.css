@@ -1,0 +1,15 @@
+/* @import url("https://cdn.syncfunsion.com/ej2/material.css"); */
+
+.filter-margin {
+    margin: 10px;
+}
+
+.g-r-filter {
+    min-width: 110px;
+    width: 110px;
+}
+
+.date-range-wrapper {
+    border: 1px solid #c4bfbc;
+    border-radius: 4px;
+}

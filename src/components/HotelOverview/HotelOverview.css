@@ -1,0 +1,10 @@
+.HtlOvrvwContainer {
+    display: flex;
+}
+
+.HotelDetails {
+    margin: 7px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    white-space: normal;
+}
