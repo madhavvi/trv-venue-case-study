@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import {
     Grid, Button, Dialog, DialogActions, DialogContent, DialogTitle, makeStyles, Modal
 } from '@material-ui/core';

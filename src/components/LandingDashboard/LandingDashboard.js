@@ -7,17 +7,17 @@ import { Container, Grid } from '@material-ui/core';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { Filters } from '../Filters/Filters';
 import Hotel from '../Hotel/Hotel';
-// import { HotelItem, Filters, Spinner } from '../../components';
 import { DEFAULT_FILTERS_CONTEXT, API_URL } from '../Utils/utils';
 // import { getHotelsRequest } from '../Redux/actions/hotels';
 import './LandingDashboard.css';
+import { venueData } from '../Utils/Data';
 
 class LandingDashboard extends Component {
     constructor(props) {
         super(props);
         // this.props.getHotelsRequest();
         this.state = {
-            hotels: [],
+            hotels: venueData[0].hotels,
             loading: true,
             ...DEFAULT_FILTERS_CONTEXT,
             update: state => {
@@ -28,16 +28,17 @@ class LandingDashboard extends Component {
 
     componentWillMount() {
         /* all available hotel's list */
-        axios.get(`http://localhost:3001/hotels`).then(res => {
-            this.setState({
-                hotels: res.data,
-                loading: false
-            });
-        });
+        console.log('hotels data from json file: ', this.state.hotels);
+        // axios.get(`http://localhost:3001/hotels`).then(res => {
+        //     this.setState({
+        //         hotels: res.data,
+        //         loading: false
+        //     });
+        // });
     }
 
       filteredHotels() {
-        const { price_category, distance_to_venue, amenities, rating } = this.state.filters;
+        // const { price_category, distance_to_venue, amenities, rating } = this.state.filters;
 
         const result = _.filter(this.state.hotels, hotel => {
             // console.log('hotel in filteredHotels : ', hotel);
